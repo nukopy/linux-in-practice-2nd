@@ -33,7 +33,7 @@
   - 論理コア数: 2
   - 割当メモリ: 2048 MB
 - Software
-  - OS: Ubuntu 20.04.3 LTS ([bento/ubuntu-20.04](https://app.vagrantup.com/bento/boxes/ubuntu-20.04)
+  - OS: Ubuntu 20.04.3 LTS [bento/ubuntu-20.04](https://app.vagrantup.com/bento/boxes/ubuntu-20.04)
 
 > **Warning**
 >
@@ -70,7 +70,7 @@ vagrant ssh
 
 ### 作業ディレクトリの確認
 
-Vagrant では "同期フォルダ" 機能を使用して、ローカル環境のディレクトリの VM 環境にマウントできる。VM 環境に入ったら、まずは以下のコマンドで作業ディレクトリを確認する：
+Vagrant では "同期フォルダ" 機能を使用して、ローカル環境のディレクトリを VM 環境にマウントできる。VM 環境に入ったら、まずは以下のコマンドで作業ディレクトリを確認する：
 
 ```sh
 # ----- VM 環境 -----
@@ -123,7 +123,7 @@ vagrant reload
 
 #### VM の GUI を表示したい場合
 
-（このリポジトリの環境構築の）デフォルトでは、VM はヘッドレスモードで起動する。VM の GUI を起動したい場合、`Vagrantfile` 以下のようにを編集する：
+（このリポジトリの環境構築の）デフォルトでは、VM はヘッドレスモードで起動する。VM の GUI を起動したい場合、`Vagrantfile` を以下のように編集する：
 
 ```diff
   config.vm.provider "virtualbox" do |vb|
