@@ -52,7 +52,7 @@ Vagrant.configure("2") do |config|
     vb.memory = 2048
 
     # CPU の数（論理コア数）
-    vb.cpus = 2
+    vb.cpus = 4
 
     # I/O APICの有効化
     # vb.customize ["modifyvm", :id, "--ioapic", "on"]

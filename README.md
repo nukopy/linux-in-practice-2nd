@@ -30,7 +30,7 @@
 書籍のサンプルコードを実行する環境は仮想マシン（VM）で構築する。以下のような構成の VM を Vagrant / VirtualBox で構築している（`Vagrantfile` を参照）：
 
 - Hardware
-  - 論理コア数: 2
+  - 論理コア数: 4
   - 割当メモリ: 2048 MB
 - Software
   - OS: Ubuntu 20.04.3 LTS [bento/ubuntu-20.04](https://app.vagrantup.com/bento/boxes/ubuntu-20.04)
@@ -110,7 +110,7 @@ vagrant status # VM が停止していることを確認
     vb.memory = 2048
 
     # CPU の数（論理コア数）
-    vb.cpus = 2
+    vb.cpus = 4
     ...
   end
 ```
